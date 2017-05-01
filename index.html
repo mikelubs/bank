@@ -5,15 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>leap year</title>
+    <title>Moringa Bank</title>
     <!-- Bootstrap -->
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link href="css/styles.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Cookie|Delius|Delius+Swash+Caps|Pacifico|Ruluko" rel="stylesheet">
-
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -22,23 +19,101 @@
     <![endif]-->
   </head>
   <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1>Moringa Bank</h1>
+          <h2>Your Financial Companion</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <button type="button" class="btn">Create New Account</button>
+          <button type="button" class="btn">Login</button>
+        </div>
+      </div>
+    </div>
+
+
     <div class="container">
-     <h1>Leap year detector</h1>
+      <div class="row">
+        <div id="blanks">
+          <form>
+            <div class="form-group">
+              <label for="firstname"></label>
+              <input id="firstname" class="form-control" type="text" placeholder="First Name..." required="">
+            </div>
+            <div class="form-group">
+              <label for="lastname"></label>
+              <input id="lastname" class="form-control" type="text" placeholder="Last Name..." required="">
+            </div>
+            <div class="form-group">
+              <label for="idnumber"></label>
+              <input id="streetname" class="form-control" type="number" placeholder="ID Number..." required="">
+            </div>
+            <div class="form-group">
+              <label for="phone"></label>
+              <input id="phonenumber" class="form-control" type="number" placeholder="Phone Number..." required="">
+            </div>
+            <div class="form-group">
+              <label for="deposit"></label>
+              <input id="initial-deposit" class="form-control" type="number" placeholder="Deposit...." required="">
+            </div>
+            <button type="submit" class="btn">Create Account</button>
+          </form>
+        </div>
+      </div>
+    </div>
 
-     <form id="leap-year">
-       <div class="form-group">
-         <label for="year">Enter a year and find out if it's a leap year:</label>
-         <input id="year" type="text">
-       </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <button type="button" class="btn">Current Balance</button>
+          <button type="button" class="btn">Deposit Cash</button>
+          <button type="button" class="btn">Withdraw Cash</button>
+          <button type="button" class="btn">Logout</button>
+        </div>
+      </div>
+    </div>
 
-       <button type="submit" class="btn">Find out!</button>
-     </form>
+    <div class="container">
+      <div class="row">
+        <div id="blanks2">
+          <form>
+            <div class="form-group">
+              <label for="withdraw">Enter Amount to Withdraw</label>
+              <input id="withdraw" class="form-control" type="text" placeholder="Kshs..." required="">
+            </div>
+            <button type="submit" class="btn">Withdraw</button>
+          </form>
+        </div>
+      </div>
+    </div>
 
-     <div id="result">
-        <p><span class="year"></span> is <span class="not"></span> a leap year.</p>
-     </div>
-   </div>
+    <div class="container">
+      <div class="row">
+        <div id="blanks3">
+          <form>
+            <div class="form-group">
+              <label for="withdraw">Enter Amount to Deposit</label>
+              <input id="deposit" class="form-control" type="text" placeholder="Kshs..." required="">
+            </div>
+            <button type="submit" class="btn">Deposit</button>
+          </form>
+        </div>
+      </div>
+    </div>
 
+    <div class="container-fluid footer">
+      <div class="row">
+        <div class="col-lg-12">
+          <p>&copy 2017 Moringa Bank</p>
+        </div>
+      </div>
+    </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery-3.2.0.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
